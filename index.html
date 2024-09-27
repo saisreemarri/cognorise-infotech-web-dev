@@ -1,141 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flex Fit</title>
+    <meta charset="utf-g">
+    <meta name="viewport" content="
+    width=device-width,initial-scale=1">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--connect style.css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Osteria La Piazza</title>
 </head>
-<link rel="stylesheet" href="css/style.css">
-<style>
-    /* CSS Reset */
-    body{
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        background: url('Downloads/img/bg1.png');  
-    }
-    .left{
-        position: absolute;
-        left: 60px;
-        top: 20px;
-        display: inline-block;
-    }
-    .left img{
-        width: 140px;
-    }
-    .left div{
-        line-height: 19px;
-        font-size: 26px;
-        text-align: center;
-    }
-    .mid{
-        display: block;
-        width: 33%;
-        margin: 29px auto;
-    }
-    .right{
-        position: absolute;
-        right: 34px;
-        top: 43px;
-        display: inline-block;
-    }
-    .navbar{
-        display: inline-block;
-    }
-
-    .navbar li{
-        display: inline-block;
-        font-size: 25px ;
-    }
-    .navbar li a{
-        color: white;
-        text-decoration: none;
-        padding: 34px 23px;
-    }
-    .navbar li a:hover, .navbar li a.active{
-        text-decoration: underline; 
-        color: grey;
-    }
-    .btn{
-        margin: 0px 9px;
-        color: white;
-        background-color: black;
-        padding: 4px 14px;
-        border: 2px solid grey;
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .btn:hover{
-        background-color: rgb(31,30,30);
-    }
-    .container{
-        margin: 106px 80px;
-        padding: 75px;
-        width: 33%;
-        border-radius: 28px;
-    }
-    .form-group input{
-        text-align: center;
-        display: block;
-        width: 508px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-    }
-    .container h1{
-        text-align: center;
-    }
-    .container button{
-        display: block;
-        width: 23%;
-        margin: auto;
-    }
-</style>
 <body>
-    <header class="header">
-        <!--Left box for logo-->
-        <div class="left">
-            <img src="Downloads/img/gym.jpg" alt="">
-            <div>Flex Fit</div>
-        </div>
-        <!--Mid box for navbar-->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Gym gears</a></li>
-                <li><a href="#">Nutrition</a></li>
-            </ul>
-        </div>
-        <!--Right box for buttons-->
-        <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
-    </header> 
-    <div class="container">
-        <h1>Join the best gym now</h1>
-        <form action="noaction.php">
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Name">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Phone Number">
-            </div>
-            <button class="btn">Submit</button>
-        </form>
+<!---hero section begin-->
+<div id="hero">
+    <div id="hero_content">
+        <h1>Osteria La Piazza</h1>
+        <h2>Savor the flavours of Italy</h2>
+        <a href="#menu">Menu</a>
     </div>
+</div>
+<!---hero section end -->
+<!--header begin-->
+<div id="header">
+    <nav id="navbar">
+        <h1>Osteria La Piazza</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reserve">Reserve Table</a></li>
+            <li><a href="#chef">Chef</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="phone">
+            <a href="tel: +39 02 1234 5678"> +39 02 1234 5678</a>
+        </div>
+    </nav>
+    <div id="mobile_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#chef">Chef</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<!--header end-->
+<!--menu section begin-->
+<div id="menu">
+    <h1 id="section">Menu</h1>
+    <div id="menu_row">
+        <div id="menu_col">
+            <h2>BREAKFAST</h2>
+            <div class="box">
+                <div id="image">
+                    <img src="images/cornetti.jpeg">
+                </div>
+                <div>
+                    <h3>Cornetti</h3>
+                    <h4>€4</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/sfogliatelle.jpeg">
+                </div>
+                <div>
+                    <h3>Sfogliatelle</h3>
+                    <h4>€3</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Eggs In Purgatory (Eggs In Tomato Sauce).jpeg">
+                </div>
+                <div>
+                    <h3>Eggs in Purgatory</h3>
+                    <h4>€8</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/maritozzi.jpeg">
+                </div>
+                <div>
+                    <h3>Maritozzi</h3>
+                    <h4>€7</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Italian Baked Eggs.jpeg">
+                </div>
+                <div>
+                    <h3>Baked Eggs</h3>
+                    <h4>€6</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/ciambella.jpeg">
+                </div>
+                <div>
+                    <h3>Ciambella</h3>
+                    <h4>€5</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Biscotti.jpeg">
+                </div>
+                <div>
+                    <h3>Biscotti</h3>
+                    <h4>€6</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Bomboloni.jpeg">
+                </div>
+                <div>
+                    <h3>Bomboloni</h3>
+                    <h4>€7</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/cannoli.jpeg">
+                </div>
+                <div>
+                    <h3>Cannoli</h3>
+                    <h4>€8</h4>
+                </div>
+            </div>
+        </div>
+        <div id="menu_col">
+            <h2>LUNCH</h2>
+            <div class="box">
+                <div id="image">
+                    <img src="images/lasagna.jpeg">
+                </div>
+                <div>
+                    <h3>Lasagna</h3>
+                    <h4>€14</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/risotto.jpeg">
+                </div>
+                <div>
+                    <h3>Risotto</h3>
+                    <h4>€13</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Pasta.jpeg">
+                </div>
+                <div>
+                    <h3>Pasta</h3>
+                    <h4>€12</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/insalata caprese.jpeg">
+                </div>
+                <div>
+                    <h3>Insalata Caprese</h3>
+                    <h4>€9</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Pizza.jpeg">
+                </div>
+                <div>
+                    <h3>Pizza</h3>
+                    <h4>€9</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/calzone.jpeg">
+                </div>
+                <div>
+                    <h3>Calzone</h3>
+                    <h4>€11</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/panini.jpeg">
+                </div>
+                <div>
+                    <h3>Panini</h3>
+                    <h4>€10</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/fritto misto.jpeg">
+                </div>
+                <div>
+                    <h3>Fritto Misto</h3>
+                    <h4>€16</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Ravioli.jpeg">
+                </div>
+                <div>
+                    <h3>Ravioli</h3>
+                    <h4>€13</h4>
+                </div>
+            </div>
+        </div>
+        <div id="menu_col">
+            <h2>DINNER</h2>
+            <div class="box">
+                <div id="image">
+                    <img src="images/osso bucco.jpeg">
+                </div>
+                <div>
+                    <h3>Osso Bucco</h3>
+                    <h4>€23</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Vitello Tonnato (sous Vide) - Die Jungs Kochen Und Backen - Foodblog Köln.jpeg">
+                </div>
+                <div>
+                    <h3>Vitello Tonnato</h3>
+                    <h4>€20</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Bistecca alla Fiorentina (Italian-Style Porterhouse).jpeg">
+                </div>
+                <div>
+                    <h3>Bistecca alla fiorentina</h3>
+                    <h4>€22</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Italian Polenta with Sausage - EasyWorldRecipes.jpeg">
+                </div>
+                <div>
+                    <h3>Polenta</h3>
+                    <h4>€21</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Spaghetti allo scoglio (Seafood spaghetti) _ Recipe _ Kitchen Stories.jpeg">
+                </div>
+                <div>
+                    <h3>Spaghetti allo scoglio</h3>
+                    <h4>€25</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Gorgonzola Gnocchi.jpeg">
+                </div>
+                <div>
+                    <h3>Gnocchi al gorgonzola</h3>
+                    <h4>€21</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Chicken Involtini with Spinach, Speck, and Asiago Recipe.jpeg">
+                </div>
+                <div>
+                    <h3>Chicken Involtini</h3>
+                    <h4>€26</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Creamy Tuscan Chicken.jpeg">
+                </div>
+                <div>
+                    <h3>Creamy Tuscan Chicken</h3>
+                    <h4>€29</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div id="image">
+                    <img src="images/Pappardelle Bolognese (ragù alla bolognese).jpeg">
+                </div>
+                <div>
+                    <h3>Pappardelle Bolognese</h3>
+                    <h4>€27</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--book table begin-->
+<div id="reserve">
+    <h1 id="section">Reserve Table</h1>
+    <div id="reserve_row">
+        <div class="reserve_col">
+            <div id="reserve_img">
+                <img src="images/name.png">
+            </div>
+        </div>
+        <div class="reserve_col">
+            <form>
+                <h2>Save Your Spot</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Contact details">
+                <input type="text" placeholder="Number of Tables">
+                <input type="text" placeholder="Table for">
+                <input type="text" placeholder="Occasion">
+                <textarea rows="6" placeholder="Comments"></textarea>
+                <button>Reserve</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--book table end-->
+<!--chef section-->
+<div id="chef">
+    <h1 id="section">Chef</h1>
+    <div id="chef_row">
+        <div class="chef_col">
+            <div id="img">
+                <img src="images/Massimo Bottura.jpeg">
+            </div>
+            <div>
+                <h4>Massimo Bottura</h4>
+            </div>
+        </div>
+        <div class="chef_col">
+            <div id="img">
+                <img src="images/Nadia Santini.jpeg">
+            </div>
+            <div>
+                <h4>Nadia Santini</h4>
+            </div>
+        </div>
+        <div class="chef_col">
+            <div id="img">
+                <img src="images/Carlo Cracco.jpeg">
+            </div>
+            <div>
+                <h4>Carlo Cracco</h4>
+            </div>
+        </div>
+        <div class="chef_col">
+            <div id="img">
+                <img src="images/Simone Shapiro.jpeg">
+            </div>
+            <div>
+                <h4>Simone Shapiro</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!--about section-->
+<div id="about">
+    <h1 id="section">About</h1>
+    <div id="about_row">
+        <div class="about_col">
+           <h1>About Us</h1>
+           <p>
+            Experience true Italian cuisine at our restaurant, where we are committed to bring the flavours of Italy straight to your plate. Our head chef, Massimo Bottura, has carefully crafted a menu that honours the traditional ingredients and techniques of Italian cooking. From our freshly made pasta dishes to our handcrafted pizzas, each meal is a true taste of Italy.Our cozy atmosphere and attentive service makes us the perfect destination for a romantic dinner or a small gathering with friends. We also offer a wide selection of fine Italian wines, perfect for pairing with your meal. Come and savour our authentic cuisine and let us transport you to the heart of the Italian countryside.
+           </p> 
+        </div>
+        <div class="about_col">
+            <div id="about_img">
+                <img src="images/logo.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--contact section begin-->
+<div id="contact">
+    <h1 id="section">Contact</h1>
+    <div id="contact_row">
+        <div class="contact_col">
+            <div>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Ivy Manor, Santacruz East, Mumbai
+                </p>
+                <p>
+                    <a href="mailto:osteriaLaPiazza@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                        osteriaLaPiazza@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+390212345678">
+                        <i class="fa fa-phone-square"></i>
+                        +390212345678
+                    </a>
+                </p>
+                <h3>Follow Us</h3>
+                <p id="social">
+                    <a href="">
+                        <i class="fa fa-facebook-official fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-youtube-square fa-2x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="contact_col">
+            <form>
+                <h2>Give us a buzz</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea rows="6" placeholder="Your Views"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--footer section-->
+<div id="footer">
+    <div>
+        <h5>Copyright &copy;2024 | <a href="">osteriaLaPiazza</a></h5>
+    </div>
+    <div id="top">
+        <a href="#hero">
+            <i class="fa fa-chevron-circle-up"></i>
+        </a>
+    </div>
+</div>
 </body>
 </html>
